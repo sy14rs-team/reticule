@@ -5,7 +5,7 @@ import (
 )
 
 type startServer struct {
-	Config          string `kong:"name='config',short='f',type='path',default='~/.reticule/coinbasepro'"`
+	Config          string `kong:"name='config',short='f',type='path',default='~/.reticule/server'"`
 	Secret          string `kong:"name='secret',help='A string to expect as the auth param in json requests to the api'"`
 	DevelopmentMode bool   `kong:"name='dev-mode',short='D',help='dev-mode collects API response shapes for inspection and comparison'"`
 

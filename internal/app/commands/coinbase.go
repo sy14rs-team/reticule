@@ -47,7 +47,7 @@ func (c *coinbaseCmd) AfterApply(ktx *kong.Context) error {
 	if err != nil {
 		return err
 	}
-	var configSet coinbaseProConfigSet
+	var configSet reticuleConfigSet
 	err = yaml.Unmarshal(source, &configSet)
 	if err != nil {
 		return err
