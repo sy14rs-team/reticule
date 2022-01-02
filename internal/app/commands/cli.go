@@ -7,6 +7,7 @@ import (
 type CLI struct {
 	Config   configCmd   `kong:"cmd,name='config',help='create, update or use a config'"`
 	Coinbase coinbaseCmd `kong:"cmd,name='coinbase',aliases='cb',help='use the coinbasepro api'"`
+	Server   startServer `kong:"cmd,name='server',help='start reticule server'"`
 	LogLevel logLevel    `kong:"name='log-level',short='v',default='info',help='set level of log, one of [ panic, fatal, error, warn, info, debug, trace ]'"`
 }
 
